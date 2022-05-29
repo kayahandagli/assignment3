@@ -1,0 +1,59 @@
+import java.util.*;
+class TestJavaCollection1{
+    public static void main(String args[]){
+        ArrayList<String> list=new ArrayList<String>();
+        list.add("Kaya");
+        list.add("Dagli");
+        list.add("Mike");
+        list.add("Tyson");
+        Iterator itr=list.iterator();
+        System.out.println("Example 1");
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+        System.out.println("Example 2 ");
+        LinkedList<String> al=new LinkedList<String>();
+        al.add("Kaya");
+        al.add("Dagli");
+        al.add("Mike");
+        al.add("Tyson");
+        Iterator<String> itr1=al.iterator();
+        while(itr1.hasNext()) {
+            System.out.println(itr1.next());
+        }
+        System.out.println("Example 3");
+
+        Vector<String> v=new Vector<String>();
+        v.add("Kaya");
+        v.add("Dagli");
+        v.add("Mike");
+        v.add("Tyson");
+        Iterator<String> itr2=v.iterator();
+        while(itr2.hasNext()){
+            System.out.println(itr2.next());
+        }
+        System.out.println("Example 4");
+
+        Stack<String> stack = new Stack<String>();
+        stack.push("Kaya");
+        stack.push("Dagli");
+        stack.push("Mike");
+        stack.push("Tyson");
+        stack.push("Monroe");
+        stack.pop();
+        Iterator<String> itr3=stack.iterator();
+        while(itr3.hasNext()){
+            System.out.println(itr3.next());
+        }
+        System.out.println("Example 5");
+
+        Deque<String> deque = new ArrayDeque<String>();
+        deque.add("Kaya");
+        deque.add("Dagli");
+        deque.add("Monroe");
+        for (String str : deque) {
+            System.out.println(str);
+        }
+
+    }
+}  
